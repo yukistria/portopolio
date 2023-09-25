@@ -3,8 +3,8 @@ let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
-    menuIcon.classList.toogle('bx-x');
-    navbar.classList.toogle('active');
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
 };
 
 
@@ -22,7 +22,7 @@ window.onscroll = () => {
     let top = window.scrollY;
     let header = document.querySelector('header');
 
-    header.classList.toogle('sticky', window.scrollY > 100);
+    header.classList.toggle('sticky', window.scrollY > 100);
     let offset = sec.offsetTop - 150;
     let height = sec.offsetHeight;
     let id = sec.getAttribute('id');
